@@ -1,0 +1,25 @@
+---
+# defaults file for ipfs
+ipfs_mirror: https://dist.ipfs.io
+ipfs_platform: linux-amd64
+ipfs_apps:
+  - n: go-ipfs
+    v: v0.4.11
+    link: ipfs
+  - n: gx
+    v: v0.12.0
+  - n: gx-go
+    v: v1.5.0
+  - n: ipfs-cluster-ctl
+    v: v0.1.0
+  - n: ipfs-pack
+    v: v0.5.0
+  - n: ipfs-see-all
+    v: v1.0.0
+  - n: ipfs-update
+    v: v1.5.2
+  - n: ipget
+    v: v0.3.0
+
+ipfs_install_parent_dir: /usr/local
+ipfs_link_dir: /usr/local/bin

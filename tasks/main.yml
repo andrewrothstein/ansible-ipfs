@@ -1,0 +1,43 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{item}}'
+  with_first_found:
+    - files:
+        - '{{ansible_distribution}}-{{ansible_distribution_release}}.yml'
+        - '{{ansible_distribution}}.yml'
+        - '{{ansible_os_family}}.yml'
+      skip: true
+      paths:
+        - '{{role_path}}/vars'
+- name: download archives...
+  become: yes
+  become_user: root
+  with_items: '{{ipfs_apps}}'
+  get_url:
+    url: '{{ipfs_mirror}}/{{item.n}}/{{item.v}}/{{item.n}}_{{item.v}}_{{ipfs_platform}}.tar.gz'
+    dest: /tmp/{{item.n}}_{{item.v}}.tgz
+    mode: 0644
+- name: make version specific install directories
+  become: yes
+  become_user: root
+  with_items: '{{ipfs_apps}}'
+  file:
+    path: '{{ipfs_install_parent_dir}}/{{item.n}}_{{item.v}}'
+    state: directory
+    mode: 0755
+- name: unarchive...
+  become: yes
+  become_user: root
+  with_items: '{{ipfs_apps}}'
+  unarchive:
+    src: /tmp/{{item.n}}_{{item.v}}.tgz
+    dest: '{{ipfs_install_parent_dir}}/{{item.n}}_{{item.v}}'
+    creates: '{{ipfs_install_parent_dir}}/{{item.n}}_{{item.v}}/{{item.n}}'
+- name: links...
+  become: yes
+  become_user: root
+  with_items: '{{ipfs_apps}}'
+  file:
+    src: '{{ipfs_install_parent_dir}}/{{item.n}}_{{item.v}}/{{item.n}}/{{item.link|default(item.n)}}'
+    dest: '{{ipfs_link_dir}}/{{item.link|default(item.n)}}'
+    state: link
