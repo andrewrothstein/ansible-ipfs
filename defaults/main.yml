@@ -6,20 +6,36 @@ ipfs_apps:
   - n: go-ipfs
     v: v0.4.11
     link: ipfs
+    checksums:
+      linux-amd64: sha256:a638ac436597ba20b1a25b289b8c89cfa31a1fc7399de66a35ba04e45562b482
   - n: gx
     v: v0.12.0
+    checksums:
+      linux-amd64: sha256:bed32b91e25cfd299bd2465909a9de447495df38422bf310da5184acdc6bbad1
   - n: gx-go
     v: v1.5.0
+    checksums:
+      linux-amd64: sha256:6c7eab6acee1661b93f480304adadcbd12ace419535a11a3fe747fe7bd622fed
   - n: ipfs-cluster-ctl
     v: v0.1.0
+    checksums:
+      linux-amd64: sha256:767409f3c4abf0298f993659682d97a39d4fa96493e951ef97ba85a339df88c9
   - n: ipfs-pack
     v: v0.5.0
+    checksums:
+      linux-amd64: sha256:c78561f3f9844539c7ed4ba1df795eacc3a3ca6193b2ab2755c7ca7d4934a152
   - n: ipfs-see-all
     v: v1.0.0
+    checksums:
+      linux-amd64: sha256:d7ae72f5cb2a2bf3c2b8591c7ac7fa3d602e488206ddb18b2b49fcd065896db6
   - n: ipfs-update
     v: v1.5.2
+    checksums:
+      linux-amd64: sha256:d6430f832bcdc1aff16351f8ff894143d2e072d7dd3cc31f1ac6592e0528cca3
   - n: ipget
     v: v0.3.0
+    checksums:
+      linux-amd64: sha256:7143800943834aa8cebdefd8a9fc0f1a6f643983cce6a91c09f643b1b7caf99f
 
 ipfs_install_parent_dir: /usr/local
 ipfs_link_dir: /usr/local/bin
