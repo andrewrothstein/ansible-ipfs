@@ -13,25 +13,25 @@ ipfs_apps:
     checksums:
       linux-amd64: sha256:aac410ae49cec7fb6788044a7d01a1e3f377f77650e6c191357831ce6cd06283
   - n: gx
-    v: v0.12.0
+    v: v0.12.1
     checksums:
-      linux-amd64: sha256:bed32b91e25cfd299bd2465909a9de447495df38422bf310da5184acdc6bbad1
+      linux-amd64: sha256:07b1077cebe2d8ed0d4c12f53c8733f42ffc7761229e51e0f50f2ac354af643e
   - n: gx-go
-    v: v1.5.0
+    v: v1.6.0
     checksums:
-      linux-amd64: sha256:6c7eab6acee1661b93f480304adadcbd12ace419535a11a3fe747fe7bd622fed
+      linux-amd64: sha256:89eaad276010ff585fc096aa0f2da8097473ffe77b001be0d6549a93374b4f7c
   - n: ipfs-cluster-ctl
-    v: v0.3.0
+    v: v0.3.2
     checksums:
-      linux-amd64: sha256:b553461ebb4aceb0247bb8f22ceb56087370ff485ca78c9332545dd5169b6aea
+      linux-amd64: sha256:da3a8055e896e759cc83c314554d5d37120cd555dce0bad98ef404802465a650
   - n: ipfs-cluster-service
-    v: v0.3.0
+    v: v0.3.2
     checksums:
-      linux-amd64: sha256:42e5278d99993341beed07e1b29256f988d01d1a1cd52db303badec10076f4f2
+      linux-amd64: sha256:17ec1d97391619db604e85883402e19af9dc226057b01163c4ea4676c3a8892a
   - n: ipfs-pack
     v: v0.6.0
     checksums:
-      linux-amd64: sha256:c60b87e93589cbc337c518f10fe3136ab31db7d74e0a9284bf3278e137baa924
+      linux-amd64: sha256:b9e4b4f23249663bdc5735432cbe71d618ba0dead286185dc63a7cfce70d68f2
   - n: ipfs-see-all
     v: v1.0.0
     checksums:
