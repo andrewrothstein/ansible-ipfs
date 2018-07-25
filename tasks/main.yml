@@ -6,7 +6,7 @@
   get_url:
     url: '{{ipfs_mirror}}/{{item.n}}/{{item.v}}/{{item.n}}_{{item.v}}_{{ipfs_platform}}.tar.gz'
     dest: /tmp/{{item.n}}_{{item.v}}.tgz
-    checksum: '{{item.checksums[ipfs_platform]}}'
+    checksum: '{{item.checksums[item.v][ipfs_platform]}}'
     mode: 0644
 - name: make version specific install directories
   become: yes

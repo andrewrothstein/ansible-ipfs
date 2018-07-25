@@ -4,46 +4,80 @@ ipfs_mirror: https://dist.ipfs.io
 ipfs_platform: linux-amd64
 ipfs_apps:
   - n: fs-repo-migrations
-    v: v1.3.0
+    v: v1.4.0
     checksums:
-      linux-amd64: sha256:3d4b4f2c4da6b3571d40858dafe5c2d84ece3da56132be18b01f998b33d0701a
+      v1.3.0:
+        linux-amd64: sha256:3d4b4f2c4da6b3571d40858dafe5c2d84ece3da56132be18b01f998b33d0701a
+      v1.4.0:
+        # https://dist.ipfs.io/fs-repo-migrations/v1.4.0/fs-repo-migrations_v1.4.0_linux-amd64.tar.gz
+        linux-amd64: sha256:c8b0ab9d4b1eb43f2e8cbe18a2dcbc7c794f717b351b9025fc9907c4107ba777
   - n: go-ipfs
-    v: v0.4.13
+    v: v0.4.16
     link: ipfs
     checksums:
-      linux-amd64: sha256:aac410ae49cec7fb6788044a7d01a1e3f377f77650e6c191357831ce6cd06283
+      v0.4.13:
+        linux-amd64: sha256:aac410ae49cec7fb6788044a7d01a1e3f377f77650e6c191357831ce6cd06283
+      v0.4.16:
+        # https://dist.ipfs.io/go-ipfs/v0.4.16/go-ipfs_v0.4.16_linux-amd64.tar.gz
+        linux-amd64: sha256:e52f359b0bc94d40eb295ad88df63f802d26e798f5176ceb4754e72dc4da0233
   - n: gx
-    v: v0.12.1
+    v: v0.13.0
     checksums:
-      linux-amd64: sha256:07b1077cebe2d8ed0d4c12f53c8733f42ffc7761229e51e0f50f2ac354af643e
+      v0.12.1:
+        linux-amd64: sha256:07b1077cebe2d8ed0d4c12f53c8733f42ffc7761229e51e0f50f2ac354af643e
+      v0.13.0:
+        # https://dist.ipfs.io/gx/v0.13.0/gx_v0.13.0_linux-amd64.tar.gz
+        linux-amd64: sha256:30467c4383cda14a1d202a12147acd2647a315a8cd4152378bc23c86562566c3
   - n: gx-go
-    v: v1.6.0
+    v: v1.7.0
     checksums:
-      linux-amd64: sha256:89eaad276010ff585fc096aa0f2da8097473ffe77b001be0d6549a93374b4f7c
+      v1.6.0:
+        linux-amd64: sha256:89eaad276010ff585fc096aa0f2da8097473ffe77b001be0d6549a93374b4f7c
+      v1.7.0:
+        # https://dist.ipfs.io/gx-go/v1.7.0/gx-go_v1.7.0_linux-amd64.tar.gz
+        linux-amd64: sha256:c8f083d2d2a51be5777c6b485be47490e62a982fe8cf22a7059952a91bcdd8a8
   - n: ipfs-cluster-ctl
-    v: v0.3.2
+    v: v0.4.0
     checksums:
-      linux-amd64: sha256:da3a8055e896e759cc83c314554d5d37120cd555dce0bad98ef404802465a650
+      v0.3.2:
+        linux-amd64: sha256:da3a8055e896e759cc83c314554d5d37120cd555dce0bad98ef404802465a650
+      v0.4.0:
+        # https://dist.ipfs.io/ipfs-cluster-ctl/v0.4.0/ipfs-cluster-ctl_v0.4.0_linux-amd64.tar.gz
+        linux-amd64: sha256:e6c47adfbc304222ede468b92dffa8571d7265f4f5dd3169ee890ca8e7eafc43
   - n: ipfs-cluster-service
-    v: v0.3.2
+    v: v0.4.0
     checksums:
-      linux-amd64: sha256:17ec1d97391619db604e85883402e19af9dc226057b01163c4ea4676c3a8892a
+      v0.3.2:
+        linux-amd64: sha256:17ec1d97391619db604e85883402e19af9dc226057b01163c4ea4676c3a8892a
+      v0.4.0:
+        # https://dist.ipfs.io/ipfs-cluster-service/v0.4.0/ipfs-cluster-service_v0.4.0_linux-amd64.tar.gz
+        linux-amd64: sha256:bedc47f493c70467874e43765dff4ccb644f26fb0ac8a2a48d3e586098caed89
+  - n: ipfs-ds-convert
+    v: v0.3.0
+    checksums:
+      v0.3.0:
+        # https://dist.ipfs.io/ipfs-ds-convert/v0.3.0/ipfs-ds-convert_v0.3.0_linux-amd64.tar.gz
+        linux-amd64: sha256:4eab8536b60c14e3fe71a52fd49ca32cdc080d29e4cca1fa503a67b2950d1ef1
   - n: ipfs-pack
     v: v0.6.0
     checksums:
-      linux-amd64: sha256:b9e4b4f23249663bdc5735432cbe71d618ba0dead286185dc63a7cfce70d68f2
+      v0.6.0:
+        linux-amd64: sha256:b9e4b4f23249663bdc5735432cbe71d618ba0dead286185dc63a7cfce70d68f2
   - n: ipfs-see-all
     v: v1.0.0
     checksums:
-      linux-amd64: sha256:d7ae72f5cb2a2bf3c2b8591c7ac7fa3d602e488206ddb18b2b49fcd065896db6
+      v1.0.0:
+        linux-amd64: sha256:d7ae72f5cb2a2bf3c2b8591c7ac7fa3d602e488206ddb18b2b49fcd065896db6
   - n: ipfs-update
     v: v1.5.2
     checksums:
-      linux-amd64: sha256:d6430f832bcdc1aff16351f8ff894143d2e072d7dd3cc31f1ac6592e0528cca3
+      v1.5.2:
+        linux-amd64: sha256:d6430f832bcdc1aff16351f8ff894143d2e072d7dd3cc31f1ac6592e0528cca3
   - n: ipget
     v: v0.3.0
     checksums:
-      linux-amd64: sha256:7143800943834aa8cebdefd8a9fc0f1a6f643983cce6a91c09f643b1b7caf99f
+      v0.3.0:
+        linux-amd64: sha256:7143800943834aa8cebdefd8a9fc0f1a6f643983cce6a91c09f643b1b7caf99f
 
 ipfs_install_parent_dir: /usr/local
 ipfs_link_dir: /usr/local/bin
