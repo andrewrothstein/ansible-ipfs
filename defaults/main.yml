@@ -12,7 +12,7 @@ ipfs_apps:
         # https://dist.ipfs.io/fs-repo-migrations/v1.4.0/fs-repo-migrations_v1.4.0_linux-amd64.tar.gz
         linux-amd64: sha256:c8b0ab9d4b1eb43f2e8cbe18a2dcbc7c794f717b351b9025fc9907c4107ba777
   - n: go-ipfs
-    v: v0.4.16
+    v: v0.4.17
     link: ipfs
     checksums:
       v0.4.13:
@@ -20,6 +20,9 @@ ipfs_apps:
       v0.4.16:
         # https://dist.ipfs.io/go-ipfs/v0.4.16/go-ipfs_v0.4.16_linux-amd64.tar.gz
         linux-amd64: sha256:e52f359b0bc94d40eb295ad88df63f802d26e798f5176ceb4754e72dc4da0233
+      v0.4.17:
+        # https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_linux-amd64.tar.gz
+        linux-amd64: sha256:1bb1050ebe74f9042ac721eb1b71f92e1b0e78e54c59dadfde13080facb2901c
   - n: gx
     v: v0.13.0
     checksums:
