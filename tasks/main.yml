@@ -21,6 +21,7 @@
   become_user: root
   with_items: '{{ipfs_apps}}'
   unarchive:
+    copy: no
     src: /tmp/{{item.n}}_{{item.v}}.tgz
     dest: '{{ipfs_install_parent_dir}}/{{item.n}}_{{item.v}}'
     creates: '{{ipfs_install_parent_dir}}/{{item.n}}_{{item.v}}/{{item.n}}'
