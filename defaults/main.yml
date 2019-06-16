@@ -12,7 +12,7 @@ ipfs_apps:
         # https://dist.ipfs.io/fs-repo-migrations/v1.4.0/fs-repo-migrations_v1.4.0_linux-amd64.tar.gz
         linux-amd64: sha256:c8b0ab9d4b1eb43f2e8cbe18a2dcbc7c794f717b351b9025fc9907c4107ba777
   - n: go-ipfs
-    v: v0.4.19
+    v: v0.4.21
     link: ipfs
     checksums:
       v0.4.13:
@@ -29,6 +29,10 @@ ipfs_apps:
       v0.4.19:
         # https://dist.ipfs.io/go-ipfs/v0.4.19/go-ipfs_v0.4.19_linux-amd64.tar.gz
         linux-amd64: sha256:e35c2067e70d2f165f909d1b70f4eb2a2151528f1741a5927494d54c313b6012
+      v0.4.21:
+        # https://dist.ipfs.io/go-ipfs/v0.4.21/go-ipfs_v0.4.21_linux-amd64.tar.gz
+        linux-amd64: sha256:a7ec5ddc4d52f818cbf3853a80f7ec17f9fde9128f039485dbe1889cf673d562
+
   - n: gx
     v: v0.14.2
     checksums:
@@ -58,7 +62,7 @@ ipfs_apps:
         # https://dist.ipfs.io/gx-go/v1.9.0/gx-go_v1.9.0_linux-amd64.tar.gz
         linux-amd64: sha256:b9b20bc649904e3333ad637b400c6fe9a21cf28820d77879a510ea68a71d1fcd
   - n: ipfs-cluster-ctl
-    v: v0.10.0
+    v: v0.10.1
     checksums:
       v0.3.2:
         linux-amd64: sha256:da3a8055e896e759cc83c314554d5d37120cd555dce0bad98ef404802465a650
@@ -68,11 +72,11 @@ ipfs_apps:
       v0.6.0:
         # https://dist.ipfs.io/ipfs-cluster-ctl/v0.6.0/ipfs-cluster-ctl_v0.6.0_linux-amd64.tar.gz
         linux-amd64: sha256:314b5739154dc214e7bf260be0aabdd2affa4d27b984ab1641b6b31f752acd24
-      v0.10.0:
-        # https://dist.ipfs.io/ipfs-cluster-ctl/v0.10.0/ipfs-cluster-ctl_v0.10.0_linux-amd64.tar.gz
-        linux-amd64: sha256:e05eb765e0f696d87ec25b8997b12258564b3cb885ec4331e96e33ea5bebbad9
+      v0.10.1:
+        # https://dist.ipfs.io/ipfs-cluster-ctl/v0.10.1/ipfs-cluster-ctl_v0.10.1_linux-amd64.tar.gz
+        linux-amd64: sha256:c82ba76b21a6fc42c8c635962a356c51fe6d4d0fbac2a77bfdd159cbe6a56f49
   - n: ipfs-cluster-service
-    v: v0.10.0
+    v: v0.10.1
     checksums:
       v0.3.2:
         linux-amd64: sha256:17ec1d97391619db604e85883402e19af9dc226057b01163c4ea4676c3a8892a
@@ -91,6 +95,9 @@ ipfs_apps:
       v0.10.0:
         # https://dist.ipfs.io/ipfs-cluster-service/v0.10.0/ipfs-cluster-service_v0.10.0_linux-amd64.tar.gz
         linux-amd64: sha256:c28f38dc4707d79d79cfaded8ce3e68742e40b7e818c25f3349a14198390fb5f
+      v0.10.1:
+        # https://dist.ipfs.io/ipfs-cluster-service/v0.10.1/ipfs-cluster-service_v0.10.1_linux-amd64.tar.gz
+        linux-amd64: sha256:a168e9d3544f53f3d734098533d606b88417f6319bc8f83b1af7ef1328ed246a
   - n: ipfs-ds-convert
     v: v0.4.0
     checksums:
