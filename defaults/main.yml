@@ -2,134 +2,148 @@
 # defaults file for ipfs
 ipfs_mirror: https://dist.ipfs.io
 ipfs_platform: linux-amd64
-ipfs_apps:
-  - n: fs-repo-migrations
-    v: v1.4.0
-    checksums:
-      v1.3.0:
-        linux-amd64: sha256:3d4b4f2c4da6b3571d40858dafe5c2d84ece3da56132be18b01f998b33d0701a
-      v1.4.0:
-        # https://dist.ipfs.io/fs-repo-migrations/v1.4.0/fs-repo-migrations_v1.4.0_linux-amd64.tar.gz
-        linux-amd64: sha256:c8b0ab9d4b1eb43f2e8cbe18a2dcbc7c794f717b351b9025fc9907c4107ba777
-  - n: go-ipfs
-    v: v0.4.21
-    link: ipfs
-    checksums:
-      v0.4.13:
-        linux-amd64: sha256:aac410ae49cec7fb6788044a7d01a1e3f377f77650e6c191357831ce6cd06283
-      v0.4.16:
-        # https://dist.ipfs.io/go-ipfs/v0.4.16/go-ipfs_v0.4.16_linux-amd64.tar.gz
-        linux-amd64: sha256:e52f359b0bc94d40eb295ad88df63f802d26e798f5176ceb4754e72dc4da0233
-      v0.4.17:
-        # https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_linux-amd64.tar.gz
-        linux-amd64: sha256:1bb1050ebe74f9042ac721eb1b71f92e1b0e78e54c59dadfde13080facb2901c
-      v0.4.18:
-        # https://dist.ipfs.io/go-ipfs/v0.4.18/go-ipfs_v0.4.18_linux-amd64.tar.gz
-        linux-amd64: sha256:21e6c44c0fa8edf91a727f1e8257342a4c3a879462e656861b0a179e1f6a03f6
-      v0.4.19:
-        # https://dist.ipfs.io/go-ipfs/v0.4.19/go-ipfs_v0.4.19_linux-amd64.tar.gz
-        linux-amd64: sha256:e35c2067e70d2f165f909d1b70f4eb2a2151528f1741a5927494d54c313b6012
-      v0.4.21:
-        # https://dist.ipfs.io/go-ipfs/v0.4.21/go-ipfs_v0.4.21_linux-amd64.tar.gz
-        linux-amd64: sha256:a7ec5ddc4d52f818cbf3853a80f7ec17f9fde9128f039485dbe1889cf673d562
 
-  - n: gx
-    v: v0.14.2
-    checksums:
-      v0.12.1:
-        linux-amd64: sha256:07b1077cebe2d8ed0d4c12f53c8733f42ffc7761229e51e0f50f2ac354af643e
-      v0.13.0:
-        # https://dist.ipfs.io/gx/v0.13.0/gx_v0.13.0_linux-amd64.tar.gz
-        linux-amd64: sha256:30467c4383cda14a1d202a12147acd2647a315a8cd4152378bc23c86562566c3
-      v0.14.1:
-        # https://dist.ipfs.io/gx/v0.14.1/gx_v0.14.1_linux-amd64.tar.gz
-        linux-amd64: sha256:c1868478b510dd786bf380b15930f9c597dda4798ea42344b81c2ef0eb1d156a
-      v0.14.2:
-        # https://dist.ipfs.io/gx/v0.14.2/gx_v0.14.2_linux-amd64.tar.gz
-        linux-amd64: sha256:74d7a4fa8b3040b5cbf9c6c05f04dfcda318c17c981768704c0a9beb5f9cf90f
-  - n: gx-go
-    v: v1.9.0
-    checksums:
-      v1.6.0:
-        linux-amd64: sha256:89eaad276010ff585fc096aa0f2da8097473ffe77b001be0d6549a93374b4f7c
-      v1.7.0:
-        # https://dist.ipfs.io/gx-go/v1.7.0/gx-go_v1.7.0_linux-amd64.tar.gz
-        linux-amd64: sha256:c8f083d2d2a51be5777c6b485be47490e62a982fe8cf22a7059952a91bcdd8a8
-      v1.8.0:
-        # https://dist.ipfs.io/gx-go/v1.8.0/gx-go_v1.8.0_linux-amd64.tar.gz
-        linux-amd64: sha256:ab9f37c90c92fd739ae2e23fe95558c1c458fc087dd3c14246fdac7097ea0d15
-      v1.9.0:
-        # https://dist.ipfs.io/gx-go/v1.9.0/gx-go_v1.9.0_linux-amd64.tar.gz
-        linux-amd64: sha256:b9b20bc649904e3333ad637b400c6fe9a21cf28820d77879a510ea68a71d1fcd
-  - n: ipfs-cluster-ctl
-    v: v0.10.1
-    checksums:
-      v0.3.2:
-        linux-amd64: sha256:da3a8055e896e759cc83c314554d5d37120cd555dce0bad98ef404802465a650
-      v0.4.0:
-        # https://dist.ipfs.io/ipfs-cluster-ctl/v0.4.0/ipfs-cluster-ctl_v0.4.0_linux-amd64.tar.gz
-        linux-amd64: sha256:e6c47adfbc304222ede468b92dffa8571d7265f4f5dd3169ee890ca8e7eafc43
-      v0.6.0:
-        # https://dist.ipfs.io/ipfs-cluster-ctl/v0.6.0/ipfs-cluster-ctl_v0.6.0_linux-amd64.tar.gz
-        linux-amd64: sha256:314b5739154dc214e7bf260be0aabdd2affa4d27b984ab1641b6b31f752acd24
-      v0.10.1:
-        # https://dist.ipfs.io/ipfs-cluster-ctl/v0.10.1/ipfs-cluster-ctl_v0.10.1_linux-amd64.tar.gz
-        linux-amd64: sha256:c82ba76b21a6fc42c8c635962a356c51fe6d4d0fbac2a77bfdd159cbe6a56f49
-  - n: ipfs-cluster-service
-    v: v0.10.1
-    checksums:
-      v0.3.2:
-        linux-amd64: sha256:17ec1d97391619db604e85883402e19af9dc226057b01163c4ea4676c3a8892a
-      v0.4.0:
-        # https://dist.ipfs.io/ipfs-cluster-service/v0.4.0/ipfs-cluster-service_v0.4.0_linux-amd64.tar.gz
-        linux-amd64: sha256:bedc47f493c70467874e43765dff4ccb644f26fb0ac8a2a48d3e586098caed89
-      v0.5.0:
-        # https://dist.ipfs.io/ipfs-cluster-service/v0.5.0/ipfs-cluster-service_v0.5.0_linux-amd64.tar.gz
-        linux-amd64: sha256:28b4285e343f39ff5eb2c50212e824949ac3e2aa7147174dee7cf55a37ced5dd
-      v0.6.0:
-        # https://dist.ipfs.io/ipfs-cluster-service/v0.6.0/ipfs-cluster-service_v0.6.0_linux-amd64.tar.gz
-        linux-amd64: sha256:8ada104863cb61148131c2002dd2d9a09b4b02e64135c6c8b1eda6b89505aa3c
-      v0.7.0:
-        # https://dist.ipfs.io/ipfs-cluster-service/v0.7.0/ipfs-cluster-service_v0.7.0_linux-amd64.tar.gz
-        linux-amd64: sha256:2290a977b68fd5db130100cf4f7eb6c1492cef8df7cdcb90e2056c4d23bc5d0c
-      v0.10.0:
-        # https://dist.ipfs.io/ipfs-cluster-service/v0.10.0/ipfs-cluster-service_v0.10.0_linux-amd64.tar.gz
-        linux-amd64: sha256:c28f38dc4707d79d79cfaded8ce3e68742e40b7e818c25f3349a14198390fb5f
-      v0.10.1:
-        # https://dist.ipfs.io/ipfs-cluster-service/v0.10.1/ipfs-cluster-service_v0.10.1_linux-amd64.tar.gz
-        linux-amd64: sha256:a168e9d3544f53f3d734098533d606b88417f6319bc8f83b1af7ef1328ed246a
-  - n: ipfs-ds-convert
-    v: v0.4.0
-    checksums:
-      v0.3.0:
-        # https://dist.ipfs.io/ipfs-ds-convert/v0.3.0/ipfs-ds-convert_v0.3.0_linux-amd64.tar.gz
-        linux-amd64: sha256:4eab8536b60c14e3fe71a52fd49ca32cdc080d29e4cca1fa503a67b2950d1ef1
-      v0.4.0:
-        # https://dist.ipfs.io/ipfs-ds-convert/v0.4.0/ipfs-ds-convert_v0.4.0_linux-amd64.tar.gz
-        linux-amd64: sha256:d5fde5f8767e4347cc7511439199cf19ccc9720eeee47a5e8fdc2e089d00150d
-  - n: ipfs-pack
-    v: v0.6.0
-    checksums:
-      v0.6.0:
-        linux-amd64: sha256:b9e4b4f23249663bdc5735432cbe71d618ba0dead286185dc63a7cfce70d68f2
-  - n: ipfs-see-all
-    v: v1.0.0
-    checksums:
-      v1.0.0:
-        linux-amd64: sha256:d7ae72f5cb2a2bf3c2b8591c7ac7fa3d602e488206ddb18b2b49fcd065896db6
-  - n: ipfs-update
-    v: v1.5.2
-    checksums:
-      v1.5.2:
-        linux-amd64: sha256:d6430f832bcdc1aff16351f8ff894143d2e072d7dd3cc31f1ac6592e0528cca3
-  - n: ipget
-    v: v0.3.1
-    checksums:
-      v0.3.0:
-        linux-amd64: sha256:7143800943834aa8cebdefd8a9fc0f1a6f643983cce6a91c09f643b1b7caf99f
-      # https://dist.ipfs.io/ipget/v0.3.1/ipget_v0.3.1_linux-amd64.tar.gz
-      v0.3.1:
-        linux-amd64: sha256:56aca5c087c35beaf12e30da19177e1bd6ace72653e3629823f89540a01651ed
+ipfs_links:
+  go-ipfs: ipfs
+
+ipfs_versions:
+  - name: fs-repo-migrations
+    version: v1.4.0
+  - name: go-ipfs
+    version: v0.4.21
+  - name: gx
+    version: v0.14.2
+  - name: gx-go
+    version: v1.9.0
+  - name: ipfs-cluster-ctl
+    version: v0.10.1
+  - name: ipfs-cluster-service
+    version: v0.10.1
+  - name: ipfs-ds-convert
+    version: v0.4.0
+  - name: ipfs-pack
+    version: v0.6.0
+  - name: ipfs-see-all
+    version: v1.0.0
+  - name: ipfs-update
+    version: v1.5.2
+  - name: ipget
+    version: v0.3.1
+
+ipfs_checksums:
+  fs-repo-migrations:
+    v1.3.0:
+      linux-amd64: sha256:3d4b4f2c4da6b3571d40858dafe5c2d84ece3da56132be18b01f998b33d0701a
+    v1.4.0:
+      # https://dist.ipfs.io/fs-repo-migrations/v1.4.0/fs-repo-migrations_v1.4.0_linux-amd64.tar.gz
+      linux-amd64: sha256:c8b0ab9d4b1eb43f2e8cbe18a2dcbc7c794f717b351b9025fc9907c4107ba777
+
+  go-ipfs:
+    v0.4.13:
+      linux-amd64: sha256:aac410ae49cec7fb6788044a7d01a1e3f377f77650e6c191357831ce6cd06283
+    v0.4.16:
+      # https://dist.ipfs.io/go-ipfs/v0.4.16/go-ipfs_v0.4.16_linux-amd64.tar.gz
+      linux-amd64: sha256:e52f359b0bc94d40eb295ad88df63f802d26e798f5176ceb4754e72dc4da0233
+    v0.4.17:
+      # https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_linux-amd64.tar.gz
+      linux-amd64: sha256:1bb1050ebe74f9042ac721eb1b71f92e1b0e78e54c59dadfde13080facb2901c
+    v0.4.18:
+      # https://dist.ipfs.io/go-ipfs/v0.4.18/go-ipfs_v0.4.18_linux-amd64.tar.gz
+      linux-amd64: sha256:21e6c44c0fa8edf91a727f1e8257342a4c3a879462e656861b0a179e1f6a03f6
+    v0.4.19:
+      # https://dist.ipfs.io/go-ipfs/v0.4.19/go-ipfs_v0.4.19_linux-amd64.tar.gz
+      linux-amd64: sha256:e35c2067e70d2f165f909d1b70f4eb2a2151528f1741a5927494d54c313b6012
+    v0.4.21:
+      # https://dist.ipfs.io/go-ipfs/v0.4.21/go-ipfs_v0.4.21_linux-amd64.tar.gz
+      linux-amd64: sha256:a7ec5ddc4d52f818cbf3853a80f7ec17f9fde9128f039485dbe1889cf673d562
+
+  gx:
+    v0.12.1:
+      linux-amd64: sha256:07b1077cebe2d8ed0d4c12f53c8733f42ffc7761229e51e0f50f2ac354af643e
+    v0.13.0:
+      # https://dist.ipfs.io/gx/v0.13.0/gx_v0.13.0_linux-amd64.tar.gz
+      linux-amd64: sha256:30467c4383cda14a1d202a12147acd2647a315a8cd4152378bc23c86562566c3
+    v0.14.1:
+      # https://dist.ipfs.io/gx/v0.14.1/gx_v0.14.1_linux-amd64.tar.gz
+      linux-amd64: sha256:c1868478b510dd786bf380b15930f9c597dda4798ea42344b81c2ef0eb1d156a
+    v0.14.2:
+      # https://dist.ipfs.io/gx/v0.14.2/gx_v0.14.2_linux-amd64.tar.gz
+      linux-amd64: sha256:74d7a4fa8b3040b5cbf9c6c05f04dfcda318c17c981768704c0a9beb5f9cf90f
+
+  gx-go:
+    v1.6.0:
+      linux-amd64: sha256:89eaad276010ff585fc096aa0f2da8097473ffe77b001be0d6549a93374b4f7c
+    v1.7.0:
+      # https://dist.ipfs.io/gx-go/v1.7.0/gx-go_v1.7.0_linux-amd64.tar.gz
+      linux-amd64: sha256:c8f083d2d2a51be5777c6b485be47490e62a982fe8cf22a7059952a91bcdd8a8
+    v1.8.0:
+      # https://dist.ipfs.io/gx-go/v1.8.0/gx-go_v1.8.0_linux-amd64.tar.gz
+      linux-amd64: sha256:ab9f37c90c92fd739ae2e23fe95558c1c458fc087dd3c14246fdac7097ea0d15
+    v1.9.0:
+      # https://dist.ipfs.io/gx-go/v1.9.0/gx-go_v1.9.0_linux-amd64.tar.gz
+      linux-amd64: sha256:b9b20bc649904e3333ad637b400c6fe9a21cf28820d77879a510ea68a71d1fcd
+
+  ipfs-cluster-ctl:
+    v0.3.2:
+      linux-amd64: sha256:da3a8055e896e759cc83c314554d5d37120cd555dce0bad98ef404802465a650
+    v0.4.0:
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v0.4.0/ipfs-cluster-ctl_v0.4.0_linux-amd64.tar.gz
+      linux-amd64: sha256:e6c47adfbc304222ede468b92dffa8571d7265f4f5dd3169ee890ca8e7eafc43
+    v0.6.0:
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v0.6.0/ipfs-cluster-ctl_v0.6.0_linux-amd64.tar.gz
+      linux-amd64: sha256:314b5739154dc214e7bf260be0aabdd2affa4d27b984ab1641b6b31f752acd24
+    v0.10.1:
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v0.10.1/ipfs-cluster-ctl_v0.10.1_linux-amd64.tar.gz
+      linux-amd64: sha256:c82ba76b21a6fc42c8c635962a356c51fe6d4d0fbac2a77bfdd159cbe6a56f49
+
+  ipfs-cluster-service:
+    v0.3.2:
+      linux-amd64: sha256:17ec1d97391619db604e85883402e19af9dc226057b01163c4ea4676c3a8892a
+    v0.4.0:
+      # https://dist.ipfs.io/ipfs-cluster-service/v0.4.0/ipfs-cluster-service_v0.4.0_linux-amd64.tar.gz
+      linux-amd64: sha256:bedc47f493c70467874e43765dff4ccb644f26fb0ac8a2a48d3e586098caed89
+    v0.5.0:
+      # https://dist.ipfs.io/ipfs-cluster-service/v0.5.0/ipfs-cluster-service_v0.5.0_linux-amd64.tar.gz
+      linux-amd64: sha256:28b4285e343f39ff5eb2c50212e824949ac3e2aa7147174dee7cf55a37ced5dd
+    v0.6.0:
+      # https://dist.ipfs.io/ipfs-cluster-service/v0.6.0/ipfs-cluster-service_v0.6.0_linux-amd64.tar.gz
+      linux-amd64: sha256:8ada104863cb61148131c2002dd2d9a09b4b02e64135c6c8b1eda6b89505aa3c
+    v0.7.0:
+      # https://dist.ipfs.io/ipfs-cluster-service/v0.7.0/ipfs-cluster-service_v0.7.0_linux-amd64.tar.gz
+      linux-amd64: sha256:2290a977b68fd5db130100cf4f7eb6c1492cef8df7cdcb90e2056c4d23bc5d0c
+    v0.10.0:
+      # https://dist.ipfs.io/ipfs-cluster-service/v0.10.0/ipfs-cluster-service_v0.10.0_linux-amd64.tar.gz
+      linux-amd64: sha256:c28f38dc4707d79d79cfaded8ce3e68742e40b7e818c25f3349a14198390fb5f
+    v0.10.1:
+      # https://dist.ipfs.io/ipfs-cluster-service/v0.10.1/ipfs-cluster-service_v0.10.1_linux-amd64.tar.gz
+      linux-amd64: sha256:a168e9d3544f53f3d734098533d606b88417f6319bc8f83b1af7ef1328ed246a
+
+  ipfs-ds-convert:
+    v0.3.0:
+      # https://dist.ipfs.io/ipfs-ds-convert/v0.3.0/ipfs-ds-convert_v0.3.0_linux-amd64.tar.gz
+      linux-amd64: sha256:4eab8536b60c14e3fe71a52fd49ca32cdc080d29e4cca1fa503a67b2950d1ef1
+    v0.4.0:
+      # https://dist.ipfs.io/ipfs-ds-convert/v0.4.0/ipfs-ds-convert_v0.4.0_linux-amd64.tar.gz
+      linux-amd64: sha256:d5fde5f8767e4347cc7511439199cf19ccc9720eeee47a5e8fdc2e089d00150d
+
+  ipfs-pack:
+    v0.6.0:
+      linux-amd64: sha256:b9e4b4f23249663bdc5735432cbe71d618ba0dead286185dc63a7cfce70d68f2
+
+  ipfs-see-all:
+    v1.0.0:
+      linux-amd64: sha256:d7ae72f5cb2a2bf3c2b8591c7ac7fa3d602e488206ddb18b2b49fcd065896db6
+
+  ipfs-update:
+    v1.5.2:
+      linux-amd64: sha256:d6430f832bcdc1aff16351f8ff894143d2e072d7dd3cc31f1ac6592e0528cca3
+
+  ipget:
+    v0.3.0:
+      linux-amd64: sha256:7143800943834aa8cebdefd8a9fc0f1a6f643983cce6a91c09f643b1b7caf99f
+    # https://dist.ipfs.io/ipget/v0.3.1/ipget_v0.3.1_linux-amd64.tar.gz
+    v0.3.1:
+      linux-amd64: sha256:56aca5c087c35beaf12e30da19177e1bd6ace72653e3629823f89540a01651ed
 
 ipfs_install_parent_dir: /usr/local
 ipfs_link_dir: /usr/local/bin

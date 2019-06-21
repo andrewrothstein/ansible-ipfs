@@ -1,0 +1,7 @@
+---
+ipfs_shortname: '{{ ipfs_app.name }}_{{ ipfs_app.version }}'
+ipfs_tgz: '{{ ipfs_shortname }}_{{ ipfs_platform }}.tar.gz'
+ipfs_tgz_url: '{{ ipfs_mirror }}/{{ ipfs_app.name }}/{{ ipfs_app.version }}/{{ ipfs_tgz }}'
+ipfs_checksum: '{{ ipfs_checksums[ipfs_app.name][ipfs_app.version][ipfs_platform] }}'
+
+ipfs_install_dir: '{{ ipfs_install_parent_dir }}/{{ ipfs_shortname }}'
