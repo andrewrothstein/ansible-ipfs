@@ -1,2 +1,3 @@
 ---
 # vars file for ipfs
+ipfs_platform: '{{ ipfs_os }}-{{ ipfs_arch }}'
