@@ -248,7 +248,7 @@ ipfs_checksums:
       windows-386: sha256:1ae0f626d6b718c0b391493d665f30eea51146fdb8765b155b775f679b690667
       # https://dist.ipfs.io/go-ipfs/v0.4.23/go-ipfs_v0.4.23_windows-amd64.zip
       windows-amd64: sha256:d12713895536ced8891a8ea4d1a615dc0fa1b4a4e0314e00c15c13e741d37126
-   v0.5.0:
+    v0.5.0:
       # https://dist.ipfs.io/go-ipfs/v0.5.0/go-ipfs_v0.5.0_darwin-386.tar.gz
       darwin-386: sha256:9872ce8177527ac727e9030c83893ba91c5a15216dc30831c576018ec44ba614
       # https://dist.ipfs.io/go-ipfs/v0.5.0/go-ipfs_v0.5.0_darwin-amd64.tar.gz
