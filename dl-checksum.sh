@@ -32,7 +32,6 @@ dlapp()
     local ver=$2
     printf "  %s:\n" $app
     printf "    %s:\n" $ver
-    dl $app $ver darwin 386
     dl $app $ver darwin amd64
     dl $app $ver freebsd 386
     dl $app $ver freebsd amd64
@@ -45,14 +44,14 @@ dlapp()
     dl $app $ver windows amd64 zip
 }
 
-#dlapp fs-repo-migrations v1.6.3
-dlapp go-ipfs v0.7.0
+dlapp fs-repo-migrations v1.7.1
+dlapp go-ipfs v0.8.0
 #dlapp gx v0.14.2
 #dlapp gx-go v1.9.0
-#dlapp ipfs-cluster-ctl v0.13.0
-#dlapp ipfs-cluster-follow v0.13.0
-#dlapp ipfs-cluster-service v0.13.0
-#dlapp ipfs-ds-convert v0.4.0
+dlapp ipfs-cluster-ctl v0.13.1
+dlapp ipfs-cluster-follow v0.13.1
+dlapp ipfs-cluster-service v0.13.1
+dlapp ipfs-ds-convert v0.6.0
 #dlapp ipfs-pack v0.6.0
 #dlapp ipfs-see-all v1.0.0
 #dlapp ipfs-update v1.6.0
