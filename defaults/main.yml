@@ -11,7 +11,7 @@ ipfs_links:
 
 ipfs_versions:
   - name: fs-repo-migrations
-    version: v1.7.1
+    version: v2.0.1
   - name: go-ipfs
     version: v0.8.0
   - name: gx
@@ -19,11 +19,11 @@ ipfs_versions:
   - name: gx-go
     version: v1.9.0
   - name: ipfs-cluster-ctl
-    version: v0.13.1
+    version: v0.13.3
   - name: ipfs-cluster-follow
-    version: v0.13.1
+    version: v0.13.3
   - name: ipfs-cluster-service
-    version: v0.13.1
+    version: v0.13.3
   - name: ipfs-ds-convert
     version: v0.6.0
   - name: ipfs-pack
@@ -31,9 +31,9 @@ ipfs_versions:
   - name: ipfs-see-all
     version: v1.0.0
   - name: ipfs-update
-    version: v1.6.0
+    version: v1.7.1
   - name: ipget
-    version: v0.6.0
+    version: v0.7.0
 
 ipfs_checksums:
   fs-repo-migrations:
