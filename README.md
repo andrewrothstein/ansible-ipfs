@@ -1,6 +1,6 @@
 andrewrothstein.ipfs
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-ipfs.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-ipfs)
+![Build Status](https://github.com/andrewrothstein/ansible-ipfs/actions/workflows/build.yml/badge.svg)
 
 Installs [ipfs](https://dist.ipfs.io/).
 
