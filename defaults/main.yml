@@ -13,7 +13,7 @@ ipfs_versions:
   - name: fs-repo-migrations
     version: v2.0.1
   - name: go-ipfs
-    version: v0.9.0
+    version: v0.9.1
   - name: gx
     version: v0.14.2
   - name: gx-go
