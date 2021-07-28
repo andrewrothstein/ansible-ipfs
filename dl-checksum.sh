@@ -44,13 +44,14 @@ dlapp()
     dl $app $ver windows amd64 zip
 }
 
+
 #dlapp fs-repo-migrations v2.0.1
-dlapp go-ipfs v0.9.0
+dlapp go-ipfs v0.9.1
 #dlapp gx v0.14.2
 #dlapp gx-go v1.9.0
-dlapp ipfs-cluster-ctl v0.14.0
-dlapp ipfs-cluster-follow v0.14.0
-dlapp ipfs-cluster-service v0.14.0
+#dlapp ipfs-cluster-ctl v0.14.0
+#dlapp ipfs-cluster-follow v0.14.0
+#dlapp ipfs-cluster-service v0.14.0
 #dlapp ipfs-ds-convert v0.6.0
 #dlapp ipfs-pack v0.6.0
 #dlapp ipfs-see-all v1.0.0
