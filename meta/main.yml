@@ -1,6 +1,6 @@
 dependencies:
 - role: andrewrothstein.unarchive-deps
-  version: v1.2.0
+  version: v1.2.2
 galaxy_info:
   author: Andrew Rothstein
   company: BlueMountain Capital
@@ -20,13 +20,13 @@ galaxy_info:
   - name: Debian
     versions:
     - bullseye
-    - buster
   - name: EL
     versions:
     - 8
   - name: Fedora
     versions:
     - 34
+    - 35
   - name: Ubuntu
     versions:
     - bionic
