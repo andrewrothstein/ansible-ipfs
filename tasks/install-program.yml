@@ -1,8 +1,8 @@
 ---
-- name: resolving vars for {{ ipfs_app.name }} {{ ipfs_app.version }}
+- name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: resolving vars'
   include_vars:
     file: install-vars.yml
-- name: check for existing installation of {{ ipfs_app.name }} {{ ipfs_app.version }}
+- name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: checking for installation in {{ ipfs_install_dir }}'
   become: yes
   stat:
     path: '{{ ipfs_install_dir }}'
@@ -10,40 +10,40 @@
   register: ipfs_bindir
 - when: not ipfs_bindir.stat.exists
   block:
-    - name: download {{ ipfs_app.name }} {{ ipfs_app.version }}
+    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: downloading {{ ipfs_tgz_url }} to {{ ipfs_tmp_tgz }}'
       become: yes
       become_user: root
       get_url:
         url: '{{ ipfs_tgz_url }}'
-        dest: /tmp/{{ ipfs_tgz }}
+        dest: '{{ ipfs_tmp_tgz }}'
         checksum: '{{ ipfs_checksum }}'
         mode: 0644
-    - name: make version specific install directory for {{ ipfs_app.name }} {{ ipfs_app.version }}
+    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: mkdir {{ ipfs_install_dir }}'
       become: yes
       become_user: root
       file:
         path: '{{ ipfs_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive {{ ipfs_app.name }} {{ ipfs_app.version }}
+    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: unarchiving {{ ipfs_tmp_tgz }} into {{ ipfs_install_dir }}'
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ ipfs_tgz }}
+        src: '{{ ipfs_tmp_tgz }}'
         dest: '{{ ipfs_install_dir }}'
-        creates: '{{ ipfs_install_dir }}/{{ ipfs_app.name }}'
+        creates: '{{ ipfs_install_subdir }}'
   always:
-    - name: cleanup spent archive for {{ ipfs_app.name }} {{ ipfs_app.version }}
+    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: rm {{ ipfs_tmp_tgz }}'
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ ipfs_tgz }}
+        path: '{{ ipfs_tmp_tgz }}'
         state: absent
-- name: link {{ ipfs_app.name }} {{ ipfs_app.version }}
+- name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: linking {{ ipfs_link}} to {{ ipfs_exe }}'
   become: yes
   become_user: root
   file:
-    src: '{{ ipfs_install_dir }}/{{ ipfs_app.name }}/{{ ipfs_links[ipfs_app.name] | default(ipfs_app.name) }}'
-    dest: '{{ ipfs_link_dir }}/{{ ipfs_links[ipfs_app.name] | default(ipfs_app.name) }}'
+    src: '{{ ipfs_exe }}'
+    dest: '{{ ipfs_link }}'
     state: link
