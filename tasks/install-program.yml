@@ -1,8 +1,8 @@
 ---
-- name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: resolving vars'
+- name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: resolving vars...'
   include_vars:
     file: install-vars.yml
-- name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: checking for installation in {{ ipfs_install_dir }}'
+- name: '{{ ipfs_log_prefix }}: checking for installation in {{ ipfs_install_dir }}'
   become: yes
   stat:
     path: '{{ ipfs_install_dir }}'
@@ -10,7 +10,7 @@
   register: ipfs_bindir
 - when: not ipfs_bindir.stat.exists
   block:
-    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: downloading {{ ipfs_tgz_url }} to {{ ipfs_tmp_tgz }}'
+    - name: '{{ ipfs_log_prefix }}: downloading {{ ipfs_tgz_url }} to {{ ipfs_tmp_tgz }}'
       become: yes
       become_user: root
       get_url:
@@ -18,14 +18,14 @@
         dest: '{{ ipfs_tmp_tgz }}'
         checksum: '{{ ipfs_checksum }}'
         mode: 0644
-    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: mkdir {{ ipfs_install_dir }}'
+    - name: '{{ ipfs_log_prefix }}: mkdir {{ ipfs_install_dir }}'
       become: yes
       become_user: root
       file:
         path: '{{ ipfs_install_dir }}'
         state: directory
         mode: 0755
-    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: unarchiving {{ ipfs_tmp_tgz }} into {{ ipfs_install_dir }}'
+    - name: '{{ ipfs_log_prefix }}: unarchiving {{ ipfs_tmp_tgz }} into {{ ipfs_install_dir }}'
       become: yes
       become_user: root
       unarchive:
@@ -34,13 +34,13 @@
         dest: '{{ ipfs_install_dir }}'
         creates: '{{ ipfs_install_subdir }}'
   always:
-    - name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: rm {{ ipfs_tmp_tgz }}'
+    - name: '{{ ipfs_log_prefix }}: rm {{ ipfs_tmp_tgz }}'
       become: yes
       become_user: root
       file:
         path: '{{ ipfs_tmp_tgz }}'
         state: absent
-- name: '{{ ipfs_app.name }} {{ ipfs_app.version }}: linking {{ ipfs_link}} to {{ ipfs_exe }}'
+- name: '{{ ipfs_log_prefix }}: linking {{ ipfs_link}} to {{ ipfs_exe }}'
   become: yes
   become_user: root
   file:
