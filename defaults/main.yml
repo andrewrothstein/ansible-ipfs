@@ -1518,8 +1518,6 @@ ipfs_checksums:
       freebsd-arm: sha256:0acea694779ffd944334e4f6d0405fc0c0cfc2c8e649e38029d68c2f56e3734a
       # https://dist.ipfs.io/ipfs-ds-convert/v0.6.0/ipfs-ds-convert_v0.6.0_linux-386.tar.gz
       linux-386: sha256:3c9f65fa02077584a2da3781ff1c794d26e896b8b4d83011b9b612ef06b8e442
-      # https://dist.ipfs.io/ipfs-ds-convert/v0.6.0/ipfs-ds-convert_v0.6.0_linux-amd64.tar.gz
-      linux-amd64: sha256:a51066d24a2c6eff2ab86aed8e0ec1cec864290a9a7ff8ff2530d9b24c84939a
       # https://dist.ipfs.io/ipfs-ds-convert/v0.6.0/ipfs-ds-convert_v0.6.0_linux-arm.tar.gz
       linux-arm: sha256:9a0b2b7134b99cfcb42ee4acbdc35aaa7768ba79c081ab6c9ef46aaad7350790
       # https://dist.ipfs.io/ipfs-ds-convert/v0.6.0/ipfs-ds-convert_v0.6.0_linux-arm64.tar.gz
