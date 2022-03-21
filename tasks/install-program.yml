@@ -3,7 +3,7 @@
   include_vars:
     file: install-vars.yml
 - name: '{{ ipfs_log_prefix }}: checking for installation in {{ ipfs_install_dir }}'
-  become: yes
+  become: true
   stat:
     path: '{{ ipfs_install_dir }}'
   changed_when: False
@@ -11,7 +11,7 @@
 - when: not ipfs_bindir.stat.exists
   block:
     - name: '{{ ipfs_log_prefix }}: downloading {{ ipfs_tgz_url }} to {{ ipfs_tmp_tgz }}'
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ ipfs_tgz_url }}'
@@ -19,29 +19,29 @@
         checksum: '{{ ipfs_checksum }}'
         mode: 0644
     - name: '{{ ipfs_log_prefix }}: mkdir {{ ipfs_install_dir }}'
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ ipfs_install_dir }}'
         state: directory
         mode: 0755
     - name: '{{ ipfs_log_prefix }}: unarchiving {{ ipfs_tmp_tgz }} into {{ ipfs_install_dir }}'
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ ipfs_tmp_tgz }}'
         dest: '{{ ipfs_install_dir }}'
         creates: '{{ ipfs_install_subdir }}'
   always:
     - name: '{{ ipfs_log_prefix }}: rm {{ ipfs_tmp_tgz }}'
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ ipfs_tmp_tgz }}'
         state: absent
 - name: '{{ ipfs_log_prefix }}: linking {{ ipfs_link}} to {{ ipfs_exe }}'
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ ipfs_exe }}'
