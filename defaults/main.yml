@@ -13,7 +13,7 @@ ipfs_versions:
   - name: fs-repo-migrations
     version: v2.0.2
   - name: go-ipfs
-    version: v0.12.1
+    version: v0.12.2
   - name: gx
     version: v0.14.2
   - name: gx-go
@@ -575,6 +575,27 @@ ipfs_checksums:
       windows-386: sha256:28d8faa28b18fdf1832ec2d394725ac6eb12a6e95c08100a9d6f05d975598077
       # https://dist.ipfs.io/go-ipfs/v0.12.1/go-ipfs_v0.12.1_windows-amd64.zip
       windows-amd64: sha256:efb25b57fe438c24ab82d2537fdedaeaaf08a011fe2e7a3dcf0cd7f5879170fd
+    v0.12.2:
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_darwin-amd64.tar.gz
+      darwin-amd64: sha256:ce2c868032e797b0c512523addcd2ab0262a4ca522bbc83ad3230352b5f6314e
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_freebsd-386.tar.gz
+      freebsd-386: sha256:a6767b7318d606dc95380870ce02e723722897089b852a607416c5673bab9278
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_freebsd-amd64.tar.gz
+      freebsd-amd64: sha256:6a5b76bd80d23af8ffffd27de7de3617421df42b8aa073a6df0f0f5fc29ced62
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_freebsd-arm.tar.gz
+      freebsd-arm: sha256:3512b5b1527624a30b631e309d048772f3e1714e528c532bdc8a3fcad83c5e86
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_linux-386.tar.gz
+      linux-386: sha256:11cfcf202a6c9633a12a51afef3f941ba324b5529c5aa9a3532d44e857ea1dbd
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_linux-amd64.tar.gz
+      linux-amd64: sha256:48869257b336d7122460292b371734f400e78d5314d0b1e05125799fe9ffb184
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_linux-arm.tar.gz
+      linux-arm: sha256:bb5b2cca1d1180c0c037c0d6e4500e7aa9e3a785ea1caa72b7b3f65cad2f2bb5
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_linux-arm64.tar.gz
+      linux-arm64: sha256:cfa32c50059e416f77dff3e5caa570a2573fd83ce24c6c4ed36dedcd3146c21f
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_windows-386.zip
+      windows-386: sha256:cff9b3abc8d0f088f3e0859028165b1d7b51b7e67c80ae836dc8110c12eb6f10
+      # https://dist.ipfs.io/go-ipfs/v0.12.2/go-ipfs_v0.12.2_windows-amd64.zip
+      windows-amd64: sha256:efd8c53ca875f35f09790042de94b5b9cf580cc7b3a36484832e292aae48ca48
   gx:
     v0.12.1:
       # https://dist.ipfs.io/gx/v0.12.1/gx_v0.12.1_darwin-386.tar.gz

@@ -47,7 +47,7 @@ dlapp()
 # https://dist.ipfs.io/
 
 #dlapp fs-repo-migrations v2.0.2
-dlapp go-ipfs v0.12.1
+dlapp go-ipfs v0.12.2
 #dlapp gx v0.14.2
 #dlapp gx-go v1.9.0
 #dlapp ipfs-cluster-ctl v0.14.5
