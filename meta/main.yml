@@ -21,6 +21,5 @@ galaxy_info:
     - 37
   - name: Ubuntu
     versions:
-    - bionic
     - focal
     - jammy
