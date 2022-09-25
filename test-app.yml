@@ -1,0 +1,6 @@
+---
+- command: /usr/local/bin/{{ test_app_name }} --version
+  register: test_app_output
+- name: '{{ test_app_name }} --version'
+  debug:
+    msg: '{{ test_app_output.stdout }}'

@@ -1,4 +1,16 @@
 ---
 - hosts: all
   roles:
-    - role: '{{playbook_dir}}'
+    - role: '{{ playbook_dir }}'
+  tasks:
+    - with_items:
+        - ipfs-cluster-ctl
+        - ipfs-cluster-follow
+        - ipfs-cluster-service
+        - ipfs-ds-convert
+        - ipfs-update
+        - ipget
+        - ipfs
+      include_tasks: test-app.yml
+      vars:
+        test_app_name: '{{ item }}'
