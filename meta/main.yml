@@ -15,9 +15,6 @@ galaxy_info:
   - name: Archlinux
     versions:
     - all
-  - name: Debian
-    versions:
-    - bullseye
   - name: EL
     versions:
     - 8
