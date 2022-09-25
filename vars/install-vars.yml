@@ -7,7 +7,8 @@ ipfs_checksum: '{{ ipfs_checksums[ipfs_app.name][ipfs_app.version][ipfs_platform
 
 ipfs_install_dir: '{{ ipfs_install_parent_dir }}/{{ ipfs_shortname }}'
 ipfs_install_subdir: '{{ ipfs_install_dir }}/{{ ipfs_app.name }}'
-ipfs_exe: '{{ ipfs_install_dir }}/{{ ipfs_app.name }}/{{ ipfs_links[ipfs_app.name] | default(ipfs_app.name) }}'
-ipfs_link: '{{ ipfs_link_dir }}/{{ ipfs_links[ipfs_app.name] | default(ipfs_app.name) }}'
+ipfs_link_name: '{{ ipfs_app.link | default(ipfs_app.name) }}'
+ipfs_exe: '{{ ipfs_install_subdir }}/{{ ipfs_link_name }}'
+ipfs_link: '{{ ipfs_link_dir }}/{{ ipfs_link_name }}'
 
-ipfs_log_prefix: '{{ ipfs_app.name }} {{ ipfs_app.version }}'
+ipfs_log_prefix: '{{ ipfs_app.name }}:{{ ipfs_app.version }}'

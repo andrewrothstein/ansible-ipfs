@@ -1,41 +1,34 @@
 ---
 # defaults file for ipfs
 ipfs_mirror: https://dist.ipfs.io
-ipfs_os: linux
-ipfs_arch: amd64
+ipfs_arch_map:
+  386: 386
+  aarch64: arm64
+  arm64: arm64
+  x86_64: amd64
 ipfs_install_parent_dir: /usr/local
 ipfs_link_dir: /usr/local/bin
 
-ipfs_links:
-  go-ipfs: ipfs
-
-ipfs_versions:
+ipfs_apps:
   - name: fs-repo-migrations
     version: v2.0.2
-  - name: go-ipfs
-    version: v0.12.2
-  - name: gx
-    version: v0.14.2
-  - name: gx-go
-    version: v1.9.0
   - name: ipfs-cluster-ctl
-    version: v0.14.5
+    version: v1.0.2
   - name: ipfs-cluster-follow
-    version: v0.14.5
+    version: v1.0.2
   - name: ipfs-cluster-service
-    version: v0.14.5
+    version: v1.0.2
   - name: ipfs-ds-convert
     version: v0.6.0
-  - name: ipfs-pack
-    version: v0.6.0
-  - name: ipfs-see-all
-    version: v1.0.0
   - name: ipfs-update
     version: v1.8.0
   - name: ipget
     version: v0.7.0
+  - name: kubo
+    version: v0.14.0
+    link: ipfs
   - name: libp2p-relay-daemon
-    version: v0.1.0
+    version: v0.2.0
 
 ipfs_checksums:
   fs-repo-migrations:
@@ -1098,6 +1091,28 @@ ipfs_checksums:
       windows-386: sha256:22af0f541280f3ad6c283a3a0d2a299d0b34fd61977e49ae902b993bb5fe2525
       # https://dist.ipfs.io/ipfs-cluster-ctl/v0.14.5/ipfs-cluster-ctl_v0.14.5_windows-amd64.zip
       windows-amd64: sha256:8bc1c18c196c134583b6265d77739f1103950034148bb3058c75fc7dde1af6f0
+    v1.0.2:
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_darwin-amd64.tar.gz
+      darwin-amd64: sha256:6dcaeaf63b72bc18a29495b511ddfa1121f5d55b82385384603ce9049c2709bb
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_freebsd-386.tar.gz
+      freebsd-386: sha256:f3b3192becfa6b33d8ebaaaf19d764106a010560d3e86c20ae7e240acbd6fdc5
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_freebsd-amd64.tar.gz
+      freebsd-amd64: sha256:a13318f073e3085c1b12a90d0de1c20b43364adf398b38ff89ed7c8ce9339b7b
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_freebsd-arm.tar.gz
+      freebsd-arm: sha256:489f3091fe9626c99e67341835ebd37d765e6af8abf372d4df0370b8623a2fc6
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_linux-386.tar.gz
+      linux-386: sha256:b811e7d603c5612cbb04224eee89f9d825d9de7c7b9a9e0d034d66a76040cc8b
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_linux-amd64.tar.gz
+      linux-amd64: sha256:63c0fbb8941255fe7997cc86b9d029a801070ecf06fdb079475d1e3ba2909643
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_linux-arm.tar.gz
+      linux-arm: sha256:47c0046a25d889f95590c3d26784174e784184f138ef346d090cfc13e083bd69
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_linux-arm64.tar.gz
+      linux-arm64: sha256:c641fb14da4bb6f75fb730abae1f697dee826577c0c4ea6f78edf8dad2622a61
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_windows-386.zip
+      windows-386: sha256:a5008d2fc6848a77cea7e20e16ebb66e220f4574fc08f9e01c1db52d2f4335da
+      # https://dist.ipfs.io/ipfs-cluster-ctl/v1.0.2/ipfs-cluster-ctl_v1.0.2_windows-amd64.zip
+      windows-amd64: sha256:90720c67124ca4f277de153fb0b2bb5c793b635d3dc4f16fc946aea4aab905ab
+
   ipfs-cluster-follow:
     v0.12.1:
       # https://dist.ipfs.io/ipfs-cluster-follow/v0.12.1/ipfs-cluster-follow_v0.12.1_darwin-386.tar.gz
@@ -1271,6 +1286,28 @@ ipfs_checksums:
       windows-386: sha256:9095fc1ab2f45f010b8b111d87df3f65445c1fee99d895fbe41c1bd5122af918
       # https://dist.ipfs.io/ipfs-cluster-follow/v0.14.5/ipfs-cluster-follow_v0.14.5_windows-amd64.zip
       windows-amd64: sha256:c9d35b1dc2ae1466a32610ff4df471c9748981caf2144083819ee895831dc08b
+    v1.0.2:
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_darwin-amd64.tar.gz
+      darwin-amd64: sha256:fc71c7a4eebea07cd76991b446fb9a9d0371d76c72f1ff34d2b93ebbad9d90a7
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_freebsd-386.tar.gz
+      freebsd-386: sha256:aa0c257504b524e335536e4a0a363b4cc4430c61cced5ed0a665811dd04bae4b
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_freebsd-amd64.tar.gz
+      freebsd-amd64: sha256:7bbf87cfec623e2c4d38548ccd167f86103301751b440d9609790e422c525f88
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_freebsd-arm.tar.gz
+      freebsd-arm: sha256:2a976ad105d36dee8e5184d1d47774740f7a10d524913e063f1b1d3717bfe88e
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_linux-386.tar.gz
+      linux-386: sha256:a66e62c0ced10d8fcfb01eab921bdd52eb899753ced4f7b83891b903556a0ac3
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_linux-amd64.tar.gz
+      linux-amd64: sha256:7db791224f0f887c817d2e154271ee7c5bff6caa2524ed380fceeb4f4bc7516a
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_linux-arm.tar.gz
+      linux-arm: sha256:d8bfd6b936bb452eced1a9347a194a199e86d4904344072c0ff69e3672545aa9
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_linux-arm64.tar.gz
+      linux-arm64: sha256:8155879249224b4f63fc8d13375e13bda2c9e348f15135f6c86687e237a108f3
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_windows-386.zip
+      windows-386: sha256:8e98ce8385bc91f102e596d20395d9bf63da3276cc60c13c68ba56a0d4ab06d2
+      # https://dist.ipfs.io/ipfs-cluster-follow/v1.0.2/ipfs-cluster-follow_v1.0.2_windows-amd64.zip
+      windows-amd64: sha256:649535481f36ee46f22419f4e44a53a3e95fe1a46ae48d43ef1a6bd0f72e81f6
+
   ipfs-cluster-service:
     v0.3.2:
       # https://dist.ipfs.io/ipfs-cluster-service/v0.3.2/ipfs-cluster-service_v0.3.2_darwin-386.tar.gz
@@ -1589,6 +1626,27 @@ ipfs_checksums:
       windows-386: sha256:5a9ebff294d4d640334392b5cadd320db6bf509169adec7a6628db1530d4de08
       # https://dist.ipfs.io/ipfs-cluster-service/v0.14.5/ipfs-cluster-service_v0.14.5_windows-amd64.zip
       windows-amd64: sha256:df7a3621288fea2dc8405c6e31ba050040c9a83734ba4bfc20c43ea0e2a03348
+    v1.0.2:
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_darwin-amd64.tar.gz
+      darwin-amd64: sha256:51eba16a6103aa4f7bc5e9bcb918cb7a7da39fe35d51c2254b2f948812b333f2
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_freebsd-386.tar.gz
+      freebsd-386: sha256:697c7904d7de9f7d4190d845d72491114b551d53a3357b595618859a932c6b4f
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_freebsd-amd64.tar.gz
+      freebsd-amd64: sha256:a3fa3d5ea5cd94ac7c0806f9ce0b79fe59ae5c8c359be1b31e649c6cedc181a4
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_freebsd-arm.tar.gz
+      freebsd-arm: sha256:1eac9622aea11704154188208e984254c9b3289b959c33eaee49979c6780eb79
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_linux-386.tar.gz
+      linux-386: sha256:60eea62063d4591d453bf657b625135d6745b5fe42b6b6f81eea1732b6b8eca4
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_linux-amd64.tar.gz
+      linux-amd64: sha256:aeb425dc9811aaa93eda6c48d0846e8997dd2b2c087ba133e4680adf134bd7ae
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_linux-arm.tar.gz
+      linux-arm: sha256:2a38ac12e1f0f059e3b49f95cf8b71346ff68ae131b41f41364e5cdd7bf8deac
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_linux-arm64.tar.gz
+      linux-arm64: sha256:09041022fe9e2cdc8ef5ce696ada3bb79e63a34150bedad22cb9c949e1d4b013
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_windows-386.zip
+      windows-386: sha256:022c8c401038c21626d9b6fb028e861f80ad003427e66e509ec1013288236a13
+      # https://dist.ipfs.io/ipfs-cluster-service/v1.0.2/ipfs-cluster-service_v1.0.2_windows-amd64.zip
+      windows-amd64: sha256:7ada24c02393d6d0db14a63b99d4d4ad770832749e8857c80ea2a1e8c73bb3ea
 
   ipfs-ds-convert:
     v0.3.0:
@@ -1908,6 +1966,50 @@ ipfs_checksums:
       windows-386: sha256:c1f84cac2e0be6f754e805d286ade040f62e444f42c9061283ee96fa4925d209
       # https://dist.ipfs.io/ipget/v0.7.0/ipget_v0.7.0_windows-amd64.zip
       windows-amd64: sha256:dbbbbda4a65edbfa06058d4e5e8d93ccf92421be88293af884a381bc3ef3e3a7
+    v0.9.1:
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_darwin-amd64.tar.gz
+      darwin-amd64: sha256:121f87a67e70e3fc4ad700cb4585e8be472c6bbf4796296b43c2d1e21f582913
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_freebsd-386.tar.gz
+      freebsd-386: sha256:acd33f99dacddb1e14ae6b7dc9980f066d541f845b76b1c0f19142685bc62c42
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_freebsd-amd64.tar.gz
+      freebsd-amd64: sha256:60ed3e05dc2018165aa69fdc6c899d0c7103e7de47947ed5ea0d6fff3b0f28d2
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_freebsd-arm.tar.gz
+      freebsd-arm: sha256:6996046a897b29936c565efe0f947c2d3b3a307b6a63b2acaa83022fee5c9bdc
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_linux-386.tar.gz
+      linux-386: sha256:e47c54c3b6fa0918aab16a214afcc196ed344d4e839ba7dc19fa82a0cb54566e
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_linux-amd64.tar.gz
+      linux-amd64: sha256:f708fa74af94846460bbdb472dab2393211475bd6a3106ef25772a3275636ffe
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_linux-arm.tar.gz
+      linux-arm: sha256:78b4132f42375d7bd7eb79c73b95a8ce62dd872092a489b56e8e19371bbb108f
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_linux-arm64.tar.gz
+      linux-arm64: sha256:c3aaeb99b73bf9a176bf85d4cb8467456b3d329ffbcc426cf52b936a1eaa46ad
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_windows-386.zip
+      windows-386: sha256:7b28e450765e180479937225ddedbd86dc2d5527c7d4b276bb57f46112665f88
+      # https://dist.ipfs.io/ipget/v0.9.1/ipget_v0.9.1_windows-amd64.zip
+      windows-amd64: sha256:293d5696e5f74654ad88a499098c3563dfa1d8f2435bd0b374967a7ab013026f
+  kubo:
+    v0.14.0:
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_darwin-amd64.tar.gz
+      darwin-amd64: sha256:5a8106f3b30f238b148f7f8d2746f247ca58816926b1a6e085e3c549b6054ffb
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_freebsd-386.tar.gz
+      freebsd-386: sha256:252362fe9b223920df916f0d717a07040f8e685670267ea3e01f79df70540e22
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_freebsd-amd64.tar.gz
+      freebsd-amd64: sha256:405010f091f5e96fd53ba237a010d726f3854ef75edf761a31c4712a727c3317
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_freebsd-arm.tar.gz
+      freebsd-arm: sha256:3dcdc23a0d35c00825146cb48895a938c1da9873ee9ccda38a9dab2509113028
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_linux-386.tar.gz
+      linux-386: sha256:5f5b988e19d327713decd99e8f90f98f78e0d93455acbd6c6025bc534be4ad83
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_linux-amd64.tar.gz
+      linux-amd64: sha256:edaace86c6019cfe0e3125f944f69a94fd91040cf6812988a23a61fcfe9fe54d
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_linux-arm.tar.gz
+      linux-arm: sha256:013c6fe63f31ac8cdff917daa0d694128129f9f79031a23e8ced08bfa0e21e29
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_linux-arm64.tar.gz
+      linux-arm64: sha256:5720cb956e1d5ab59f0ad68743818a5c238fbf4c604f1b10e44aa78cad592a87
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_windows-386.zip
+      windows-386: sha256:8408e5222f1af8684f70646a317a065c6b2f4302c4c7a5005726552f6c453fc8
+      # https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_windows-amd64.zip
+      windows-amd64: sha256:3c4c5bb03adbd6c7260ba45208a38eace7df43c0b177dad06052ad7dd33e78d5
+
   libp2p-relay-daemon:
     v0.1.0:
       # https://dist.ipfs.io/libp2p-relay-daemon/v0.1.0/libp2p-relay-daemon_v0.1.0_darwin-amd64.tar.gz
@@ -1930,3 +2032,24 @@ ipfs_checksums:
       windows-386: sha256:5a9e9b125eab2f4305796a6a93b74abcdbd6bbb396aee8fbf2e15893b16c9ea4
       # https://dist.ipfs.io/libp2p-relay-daemon/v0.1.0/libp2p-relay-daemon_v0.1.0_windows-amd64.zip
       windows-amd64: sha256:eeba66a403c3fe17ccb284b10783aa49d5b270487a9536797a878c4be9b2fb40
+    v0.2.0:
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_darwin-amd64.tar.gz
+      darwin-amd64: sha256:ce18fb4cbd208d1d0afcd007ee87c317b0386bf3a8f39ea4e786f19e6025574e
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_freebsd-386.tar.gz
+      freebsd-386: sha256:be73f44b5ec4bd65112bc52fe53453b1764c9f4871dd590f74ef7f16378e6e14
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_freebsd-amd64.tar.gz
+      freebsd-amd64: sha256:1fbd5c2ff8d6eb683625641290d55aa8417890a3e2f3ff6d556d2b8de8382b3a
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_freebsd-arm.tar.gz
+      freebsd-arm: sha256:52955df3565d27ef41747afffe4ea9250d8da80e9dc222fe9e88986dbfcf5297
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_linux-386.tar.gz
+      linux-386: sha256:eb72af2f6d978250c454b1fc66861b5fefdf97159de67df377ee9d0c5a27f3c8
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_linux-amd64.tar.gz
+      linux-amd64: sha256:7de1fd3e9f0308003a054da42eb02a265f9f826a1f7ce08189690295e29c3e46
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_linux-arm.tar.gz
+      linux-arm: sha256:77b48adae513d55bc2a9bb147ccc9bde0d506dd8589fc950909ddbfa469981a5
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_linux-arm64.tar.gz
+      linux-arm64: sha256:deb39cdda4bc3280275b5be9bf4573a524be79f21d4864677cec364b946cada7
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_windows-386.zip
+      windows-386: sha256:c6c3a8c06c1aaa35d4b2c1fd89dea7285ede4d6b91192d360d52d5be25829cb3
+      # https://dist.ipfs.io/libp2p-relay-daemon/v0.2.0/libp2p-relay-daemon_v0.2.0_windows-amd64.zip
+      windows-amd64: sha256:4458d473d050169192bdd64949deb0bad65d0b6db53a4d033e3fe71883463117

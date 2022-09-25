@@ -46,16 +46,12 @@ dlapp()
 
 # https://dist.ipfs.io/
 
-#dlapp fs-repo-migrations v2.0.2
-dlapp go-ipfs v0.12.2
-#dlapp gx v0.14.2
-#dlapp gx-go v1.9.0
-#dlapp ipfs-cluster-ctl v0.14.5
-#dlapp ipfs-cluster-follow v0.14.5
-#dlapp ipfs-cluster-service v0.14.5
-#dlapp ipfs-ds-convert v0.6.0
-#dlapp ipfs-pack v0.6.0
-#dlapp ipfs-see-all v1.0.0
-#dlapp ipfs-update v1.8.0
-#dlapp ipget v0.7.0
-#dlapp libp2p-relay-daemon v0.1.0
+##dlapp fs-repo-migrations v2.0.2
+#dlapp ipfs-cluster-ctl v1.0.2
+#dlapp ipfs-cluster-follow v1.0.2
+#dlapp ipfs-cluster-service v1.0.2
+##dlapp ipfs-ds-convert v0.6.0
+##dlapp ipfs-update v1.8.0
+#dlapp ipget v0.9.1
+#dlapp kubo v0.14.0
+#dlapp libp2p-relay-daemon v0.2.0

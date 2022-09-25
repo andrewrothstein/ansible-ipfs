@@ -1,3 +1,5 @@
 ---
 # vars file for ipfs
+ipfs_os: '{{ ansible_system | lower }}'
+ipfs_arch: '{{ ipfs_arch_map[ansible_architecture] }}'
 ipfs_platform: '{{ ipfs_os }}-{{ ipfs_arch }}'

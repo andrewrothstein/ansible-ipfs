@@ -1,6 +1,8 @@
 ---
+- include_role:
+    name: andrewrothstein.unarchive-deps
 - name: looping over programs to install...
-  loop: '{{ ipfs_versions }}'
+  loop: '{{ ipfs_apps }}'
   loop_control:
     loop_var: ipfs_app
   include_tasks: install-program.yml
