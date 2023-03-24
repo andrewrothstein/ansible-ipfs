@@ -47,11 +47,11 @@ dlapp()
 # https://dist.ipfs.io/
 
 ##dlapp fs-repo-migrations v2.0.2
-dlapp ipfs-cluster-ctl v1.0.5
-dlapp ipfs-cluster-follow v1.0.5
-dlapp ipfs-cluster-service v1.0.5
+dlapp ipfs-cluster-ctl v1.0.6
+dlapp ipfs-cluster-follow v1.0.6
+dlapp ipfs-cluster-service v1.0.6
 ##dlapp ipfs-ds-convert v0.6.0
-dlapp ipfs-update v1.9.0
+##dlapp ipfs-update v1.9.0
 ##dlapp ipget v0.9.1
-dlapp kubo v0.18.1
-dlapp libp2p-relay-daemon v0.3.0
+dlapp kubo v0.19.0
+##dlapp libp2p-relay-daemon v0.3.0
